@@ -1,0 +1,35 @@
+DxChangeWindowMode(1)
+
+もし、DxDxLib_Init()が(-1)ならば、
+　終わり
+
+DxDrawPixel(320,240,$ffff)
+
+DxWaitKey()
+
+DxDxLib_End()
+
+終わり
+
+●DxDxLib_Init()=DLL("DxLib.dll",
+"int  dx_DxLib_Init(
+)")
+
+●DxDxLib_End()=DLL("DxLib.dll",
+"int dx_DxLib_End(
+)")
+
+●DxDrawPixel(x,y,c)=DLL("DxLib.dll",
+"int  dx_DrawPixel(
+  int  x,
+  int  y,
+  DWORD  Color
+)")
+●DxWaitKey()=DLL("DxLib.dll",
+"int  dx_WaitKey(
+)")
+
+●DxChangeWindowMode(Flag)=DLL("DxLib.dll",
+"int  dx_ChangeWindowMode(
+  int  Flag
+)")
